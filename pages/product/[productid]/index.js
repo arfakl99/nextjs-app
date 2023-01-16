@@ -1,5 +1,6 @@
 import React from 'react'
 import Router, { useRouter } from 'next/router'
+import Link from 'next/link';
 
 const ProductDetail = () => {
 
@@ -9,8 +10,13 @@ const ProductDetail = () => {
     
     <>
     
-   
-    <div>detail About {productid}</div>
+   <Link href="/product/1" replace>
+   <div>detail About {productid}</div>
+   </Link>
+   <Link href={`/product/${productid}`}>
+   <div>detail About {productid}</div>
+   </Link>
+    
     </>
   )
 }

@@ -1,9 +1,13 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Home = () => {
   return (
     <>
-    <div>Thisdjksdkbdjnvb sdnsdjhgv mcbvjhgchusdgc cnsdcvsghchv dchsdgcfhsdgcnzxb cdxhcvgh </div>
+    <Link href="/blog">
+    <h1>Home</h1>
+    </Link>
+    
     
     </>
   )
